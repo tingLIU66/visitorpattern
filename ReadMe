@@ -1,0 +1,9 @@
+Visitor Pattern represent an operation to be performed on the elements of an object structure.
+Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+Visitor's primary purpose is to abstract functionality that can be applied to an aggregate hierarchy of "element" objects. 
+New functionality can easily be added to the original inheritance hierarchy by creating a new Visitor subclass.
+In this program, there are two interfaces, CartVisitorInterface and Things. The two classes or concrete elements are 
+"Vegetable" and "Cosmetic" which represents the type of items you can purchase. They both utilize the Accept method to take
+in the CartVisitorImp object as the parameter. CartVisitorImp class implements the CartVisitorInterface where the different
+"Visit" methods where each of the concrete elements can be visited one by one through the method.
+The visitor pattern allows the program to expanded easily for other add on operations using other concrete elements.
